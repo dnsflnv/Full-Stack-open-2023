@@ -1,0 +1,7 @@
+note over browser:
+Save button pressed.
+{content: "Hello, world!", date: "2021-12-21T20:11:39.078Z"}
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: console {"message":"note created"}
